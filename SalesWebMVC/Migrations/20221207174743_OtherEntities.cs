@@ -17,7 +17,7 @@ namespace SalesWebMVC.Migrations
                     Name = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
                     BirthDate = table.Column<DateTime>(nullable: false),
-                    SalaryBase = table.Column<double>(nullable: false),
+                    BaseSalary = table.Column<double>(nullable: false),
                     DepartamentId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>

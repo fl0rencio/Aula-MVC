@@ -62,7 +62,7 @@ namespace SalesWebMVC.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<double>("SalaryBase");
+                    b.Property<double>("BaseSalary");
 
                     b.HasKey("Id");
 
