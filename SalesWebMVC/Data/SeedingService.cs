@@ -18,17 +18,17 @@ namespace SalesWebMVC.Data
 
         public void Seed()
         {
-            if (_context.Departament.Any()||
+            if (_context.Department.Any()||
                 _context.Seller.Any()||
                 _context.SalesRecords.Any())
             {
                 return;
             }
 
-            Departament d1 = new Departament(1, "Computers");
-            Departament d2 = new Departament(2, "Eletronics");
-            Departament d3 = new Departament(3, "Fashion");
-            Departament d4 = new Departament(4, "Books");
+            Department d1 = new Department(1, "Computers");
+            Department d2 = new Department(2, "Eletronics");
+            Department d3 = new Department(3, "Fashion");
+            Department d4 = new Department(4, "Books");
 
 
             Seller s1 = new Seller(1, "Wendel Florencio", "wendelflorencio@gmail.com", new DateTime(1999, 1, 10), 1000.0, d1);
@@ -69,7 +69,7 @@ namespace SalesWebMVC.Data
             SalesRecord r29 = new SalesRecord(29, new DateTime(2018, 10, 23), 12000.0, SaleStatus.Billed, s5);
             SalesRecord r30 = new SalesRecord(30, new DateTime(2018, 10, 12), 5000.0, SaleStatus.Billed, s2);
 
-            _context.Departament.AddRange(d1, d2, d3, d4);
+            _context.Department.AddRange(d1, d2, d3, d4);
 
             _context.Seller.AddRange(s1, s2, s3, s4, s5, s6);
 
