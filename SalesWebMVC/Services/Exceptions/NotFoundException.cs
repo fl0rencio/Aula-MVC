@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SalesWebMVC.Service.Exceptions
+namespace SalesWebMVC.Services.Exceptions
 {
     public class NotFoundException : ApplicationException
     {

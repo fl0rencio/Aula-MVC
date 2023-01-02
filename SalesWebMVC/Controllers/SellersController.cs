@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalesWebMVC.Models;
-using SalesWebMVC.Service;
 using SalesWebMVC.Models.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using SalesWebMVC.Service.Exceptions;
+using SalesWebMVC.Services.Exceptions;
 using System.Diagnostics;
 using System;
+using SalesWebMVC.Services;
 
 namespace SalesWebMVC.Controllers
 {
